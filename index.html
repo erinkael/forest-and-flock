@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forest &amp; Flock</title>
-<meta name="description" content="Forest & Flock - pet & home care, notary, events & professional services, and paper goods. Your people, well kept.">
+<title>Forest &amp; Flock - Pet Care, Notary, Events &amp; Paper Goods | Lansing, MI</title>
+<meta name="description" content="Forest & Flock - one caring Lansing studio for pet & home care, notary services, events & professional support, and paper goods. Your people, well kept.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,4 22,16 19,16 25,28 7,28 13,16 10,16' fill='%236f8a4e'/%3E%3Cpath d='M9 9 Q13 5 17 9 M17 9 Q21 5 25 9' fill='none' stroke='%231c2a40' stroke-width='2'/%3E%3C/svg%3E">
+<meta property="og:title" content="Forest & Flock - Your people, well kept.">
+<meta property="og:description" content="One caring Lansing studio: pet & home care, notary, events & professional services, and paper goods.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://erinkael.github.io/forest-and-flock/">
 <style>
   :root{
     --sage:#6f8a4e; --terra:#b9714e; --gold:#c19e4a; --navy:#1c2a40;
-    --plum:#6b3f4f; --cream:#faf6ef; --soft:#cdc6ba; --gray:#6e685e;
+    --plum:#6b3f4f; --cream:#faf6ef; --soft:#cdc6ba; --gray:#5d574e;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -45,7 +50,27 @@
   .rooms{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
   @media(max-width:620px){.rooms{grid-template-columns:1fr;}}
   .room{background:#fff; border:1px solid var(--soft); border-radius:14px; padding:22px 24px;
-    border-top:5px solid var(--sage); box-shadow:0 2px 10px rgba(0,0,0,.04); display:flex; flex-direction:column;}
+    border-top:5px solid var(--sage); box-shadow:0 2px 10px rgba(0,0,0,.04); display:flex; flex-direction:column;
+    transition:transform .12s ease, box-shadow .12s ease;}
+  .room:hover{transform:translateY(-3px); box-shadow:0 8px 22px rgba(0,0,0,.09);}
+
+  /* about */
+  .about{padding:42px 0 8px;}
+  .about-card{background:#fff; border:1px solid var(--soft); border-radius:14px; padding:26px 28px;
+    max-width:680px; margin:0 auto; display:flex; gap:24px; align-items:center; flex-wrap:wrap;}
+  .about-photo{width:130px; height:130px; border-radius:50%; object-fit:cover; flex-shrink:0;
+    background:#eef1e6; border:3px solid var(--soft); display:flex; align-items:center; justify-content:center;
+    color:var(--sage); font-size:13px; text-align:center; font-style:italic;}
+  .about-text{flex:1; min-width:220px;}
+  .about-text h3{font-size:1.35rem; margin:0 0 8px;}
+  .about-text p{color:var(--gray); margin:0; font-size:1rem;}
+
+  /* faq */
+  .faq{padding:42px 0 8px;}
+  .faq-item{background:#fff; border:1px solid var(--soft); border-radius:11px; padding:16px 20px;
+    max-width:680px; margin:10px auto;}
+  .faq-item h4{margin:0 0 5px; color:var(--navy); font-size:1.04rem;}
+  .faq-item p{margin:0; color:var(--gray); font-size:.96rem;}
   .room.notary{border-top-color:var(--terra);}
   .room.paper{border-top-color:var(--gold);}
   .room.pro{border-top-color:var(--plum);}
@@ -125,7 +150,8 @@
     <div class="wrap">
       <div class="sec-head">
         <h2>What we do</h2>
-        <p>Four rooms of one house - whatever you need, it's all here.</p>
+        <p>Four rooms of one house - whatever you need, it's all here.<br>
+        <span style="font-size:.92rem;">Serving Lansing &amp; the greater Lansing area &middot; mobile notary travels &middot; remote online notarization statewide.</span></p>
       </div>
       <div class="rooms">
 
@@ -183,6 +209,29 @@
     </div>
   </section>
 
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="sec-head"><h2>About</h2></div>
+      <div class="about-card">
+        <div class="about-photo">your<br>photo<br>here</div>
+        <div class="about-text">
+          <h3>Hi, I'm Erin.</h3>
+          <p>I'm a Lansing-based small-business owner who loves taking good care of people - their pets, their paperwork, their events, and the little paper things that make life feel held. Forest &amp; Flock is my way of doing all of it under one warm roof. Whatever you need, you'll be working directly with me.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><h2>Good to know</h2></div>
+      <div class="faq-item"><h4>What's your service area?</h4><p>Lansing and the greater Lansing area for pet care and events. Mobile notary travels to you; remote online notarization is available anywhere in Michigan.</p></div>
+      <div class="faq-item"><h4>Do you do a meet-and-greet before pet sitting?</h4><p>Yes - always. A free meet-and-greet lets your pets (and you) get comfortable before any booking.</p></div>
+      <div class="faq-item"><h4>How does the notary work?</h4><p>In person, mobile (I come to you), or remote online. Just reach out with what you need signed and we'll set a time.</p></div>
+      <div class="faq-item"><h4>How do I book or get a quote?</h4><p>Use the form below, book a time on Calendly, or call/text (517) 258-0447. For events and professional services, I'll put together a custom quote.</p></div>
+    </div>
+  </section>
+
   <div class="contact" id="contact">
     <div class="wrap">
       <div class="sec-head">
@@ -218,7 +267,7 @@
         </form>
         <div class="contact-info">
           <a href="mailto:erinkae.linscott@gmail.com">📧 erinkae.linscott@gmail.com</a>
-          <a href="tel:+15172580447">📞 (517) 258-0447</a>
+          <a href="tel:+15172580447">📞 Call or text: (517) 258-0447</a>
           <a href="https://calendly.com/erinkae-linscott" target="_blank" rel="noopener">📅 Book on Calendly</a>
         </div>
       </div>
