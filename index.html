@@ -65,6 +65,20 @@
   .about-text h3{font-size:1.35rem; margin:0 0 8px;}
   .about-text p{color:var(--gray); margin:0; font-size:1rem;}
 
+  /* rates */
+  .rates{padding:42px 0 8px;}
+  .rate-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  @media(max-width:620px){.rate-grid{grid-template-columns:1fr;}}
+  .rate-card{background:#fff; border:1px solid var(--soft); border-radius:14px; padding:20px 24px; border-top:5px solid var(--terra);}
+  .rate-card.notary{border-top-color:var(--terra);} .rate-card.pro{border-top-color:var(--plum);} .rate-card.events{border-top-color:var(--gold);}
+  .rate-card h3{font-size:1.2rem; margin:0 0 4px;}
+  .rate-card .note{font-size:.82rem; color:var(--gray); font-style:italic; margin:0 0 12px;}
+  .rate-row{display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid #f0ebe2; font-size:.96rem;}
+  .rate-row:last-child{border-bottom:0;}
+  .rate-row .svc{color:var(--navy);}
+  .rate-row .amt{color:var(--terra); font-weight:600; white-space:nowrap;}
+  .rate-foot{font-size:.84rem; color:var(--gray); text-align:center; max-width:640px; margin:16px auto 0; font-style:italic;}
+
   /* faq */
   .faq{padding:42px 0 8px;}
   .faq-item{background:#fff; border:1px solid var(--soft); border-radius:11px; padding:16px 20px;
@@ -188,6 +202,53 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section class="rates" id="rates">
+    <div class="wrap">
+      <div class="sec-head"><h2>Rates</h2><p>Transparent pricing, no surprises.</p></div>
+      <div class="rate-grid">
+
+        <div class="rate-card notary">
+          <h3>📜 Notary</h3>
+          <p class="note">Michigan notarial fee is $10 per signature - in person, electronic, or remote.</p>
+          <div class="rate-row"><span class="svc">Single notarization (in-person, e-notary, or remote)</span><span class="amt">$10/sig</span></div>
+          <div class="rate-row"><span class="svc">Bundle of 3 signatures</span><span class="amt">$25</span></div>
+          <div class="rate-row"><span class="svc">Remote Online Notarization (RON)</span><span class="amt">$10 + platform fee</span></div>
+          <div class="rate-row"><span class="svc">Loan signing (in-person, up to 25 signatures)</span><span class="amt">$150</span></div>
+          <div class="rate-row"><span class="svc">Mobile travel - Lansing (≤10 mi)</span><span class="amt">$25</span></div>
+          <div class="rate-row"><span class="svc">Mobile travel - extended (10-30 mi)</span><span class="amt">$50</span></div>
+        </div>
+
+        <div class="rate-card pro">
+          <h3>💼 Professional Services</h3>
+          <p class="note">Remote admin, planning, and document-prep support.</p>
+          <div class="rate-row"><span class="svc">Initial consult (60 min)</span><span class="amt">$75</span></div>
+          <div class="rate-row"><span class="svc">Follow-up (30 min)</span><span class="amt">$40</span></div>
+          <div class="rate-row"><span class="svc">Remote personal assistant - hourly</span><span class="amt">$40/hr</span></div>
+          <div class="rate-row"><span class="svc">Remote PA - 5-hour package</span><span class="amt">$175</span></div>
+          <div class="rate-row"><span class="svc">Remote PA - 10-hour package</span><span class="amt">$325</span></div>
+          <div class="rate-row"><span class="svc">Financial document cheat-sheet setup</span><span class="amt">$200</span></div>
+          <div class="rate-row"><span class="svc">Meeting prep &amp; follow-up (bundle of 4)</span><span class="amt">$200</span></div>
+        </div>
+
+      </div>
+      <div class="rate-grid" style="margin-top:18px;">
+        <div class="rate-card events">
+          <h3>🎉 Events</h3>
+          <p class="note">Planning, fundraising, and coordination - custom quotes for full projects.</p>
+          <div class="rate-row"><span class="svc">Event consultation (60 min)</span><span class="amt">$50</span></div>
+          <div class="rate-row"><span class="svc">Event planning &amp; coordination</span><span class="amt">custom quote</span></div>
+        </div>
+        <div class="rate-card" style="border-top-color:var(--sage);">
+          <h3>🐾 Pet &amp; Home Care</h3>
+          <p class="note">See the Pet Care card above, or book on Rover.</p>
+          <div class="rate-row"><span class="svc">Drop-in visits &amp; dog walks</span><span class="amt">from $20</span></div>
+          <div class="rate-row"><span class="svc">Overnight / house sitting</span><span class="amt">inquire</span></div>
+        </div>
+      </div>
+      <p class="rate-foot">RON and mobile fees: the $10 notarial act is fixed by Michigan law; platform and travel fees are separate and agreed before service. Travel fees confirmed in advance. Prices subject to change.</p>
     </div>
   </section>
 
